@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    font-size: 4.5em;
+    font-family: 'Lobster', cursive;
+}
+div {
+    width: 1020px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+p {
+    text-align: justify;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
