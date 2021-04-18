@@ -174,3 +174,25 @@ p.fuente-italica {
     font-size: 1.3em;
     text-align: justify;
 }
+.box_1, .box_2, .box_3{
+    margin: 40px;
+    width: 250px;
+    display: inline-block;
+    line-height: 0.1em;
+    font-size: 0.5em;
+}
+body{
+    text-align: center;
+    margin: 0;
+    border: 0;
+}
+#titulo_principal{
+    font-size: 4em;
+    color: rgb(243, 54, 7);
+    font-style: 'Lobster';
+    text-align: center;
+    font-family: 'Lobster','arial';
+}
+p{
+    text-align: center;
+}
