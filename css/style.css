@@ -8,6 +8,15 @@ h1.titulo-menu{
     text-align: left;
     color: whitesmoke;
 }
+ul{
+    text-align: right;
+    background-color: rgb(37, 236, 193);
+    color: rgb(0, 0, 0);
+    padding: 29px;
+    font-family: 'Cinzel', serif;
+    margin-left: 24px;
+    font-size: 23px;
+}
 h2 {
     text-align: center;
     font-size: 2em;
