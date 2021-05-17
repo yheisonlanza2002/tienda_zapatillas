@@ -1,0 +1,25 @@
+p{
+    font-size: 1.8em;
+    font-family: 'Cinzel', serif;
+    text-align: right;
+    color: black;
+}
+a.enlace-inicio{
+    text-decoration: none;
+    color: black;
+}
+div.box_1, .box_2, .box_3{
+    margin: 45px;
+    width: 250px;
+    display: inline-block;
+    line-height: 0.1em;
+    font-size: 0.9em;
+     color: black;
+}
+#titulo_principal{
+    background-color: whitesmoke;
+    font-size: 4em;
+    color: rgb(243, 54, 7);
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}

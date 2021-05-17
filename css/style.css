@@ -1,14 +1,60 @@
 
-h1 {
+*{
+    margin: 0 ;
+    padding: 0;
+}
+body{
     text-align: center;
-    font-size: 3em;
-    font-family: 'Lobster', cursive;
+    margin: 0;
+    border: 0;
+}
+h1{
+    font-family: 'lobster';
+    font-size: 5em;
+}
+p{
+    font-family: 'Cinzel';
+    font-size: 2em;
+    text-align: justify;
 }
 h1.titulo-menu{
     text-align: left;
     color: whitesmoke;
 }
+div {
+    width: 1020px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+div.menu {
+    padding: 1%;
+    width: 100%;
+    height: 90px;
+    background-color:#113880;
+}
+a.decoracion {
+    text-decoration: none;
+    color: black;
+}
+a.decoracion{
+    text-decoration: none;
+    color: black;
+}
+a.decoracion:hover{
+    color: purple;
+}
 ul{
+    text-align: right;
+    
+    color: rgb(0, 0, 0);
+    padding: 29px;
+    font-family: 'Cinzel', serif;
+    margin-left: 24px;
+    font-size: 23px;
+    display: inline;
+}
+.primero{
     text-align: right;
     background-color: rgb(37, 236, 193);
     color: rgb(0, 0, 0);
@@ -16,192 +62,4 @@ ul{
     font-family: 'Cinzel', serif;
     margin-left: 24px;
     font-size: 23px;
-}
-h2 {
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Lobster';
-}
-div.menu {
-    width: 100%;
-    height: 90px;
-    background-color:#113880;
-}
-h3 {
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'Lobster', cursive;;
-}
-.fuente-regular { 
-    text-align: left;
-    font-weight: 400;
-}
-.fuente-bold {
-    text-align: left;
-    font-weight: bold;
-}
-.fuente-900 {
-    text-align: left;
-    font-weight: 900;
-}
-.fuente-italica {
-    font-style: italic;
-    font-weight: 400;
-    text-align: left;
-}
-.fuente-italica-negrita {
-    font-style: italic;
-    font-weight: 900;
-    text-align: left;
-}
-div {
-    width: 1020px;
-    display: block;
-    margin: 0 auto 0 auto;
-}
-p.parrafo-enlace{
-    font-style: 'Lobster';
-    text-align: center;
-}
-p {
-    text-align: justify;
-    font-size: 2em;
-    font-family: 'Lobster', cursive;
-}
-.fondo-rebeccapurple {
-    width: 300px;
-    height: 50px;
-    background-color: rebeccapurple;
-}
-.fondo-yellow {
-    width: 300px;
-    height: 50px;
-    background-color:yellow
-}
-.fondo-purple {
-    width: 300px;
-    height: 50px;
-    background-color:purple
-}
-.fondo-orange-rgb{
-    width: 300px;
-    height: 50px;
-    background-color :rgb(255, 94, 0)
-}
-.fondo-claro-rgb{
-    width: 300px;
-    height: 50px;
-    background-color :rgb(229, 255, 0)
-}
-.fondo-verde-rgb{
-    width: 300px;
-    height: 50px;
-    background-color :rgb(9, 255, 0)
-}
-.fondo-sena {
-    width: 300px;
-    height: 50px;
-    background-color: #fb5b04;
-}
-.fondo-darkcyan {
-    width: 300px;
-    height: 50px;
-    background-color: #008b8b;
-}
-.fondo-blue {
-    width: 300px;
-    height: 50px;
-    background-color: #006d6d
-}
-p.fuente-grande {
-    font-size: 40px;
-}
-p.fuente-negrita {
-    font-weight: 900;
-}
-p.fuente-italica {
-    font-style: italic;
-
-}
-.clase-1{
-    background-color: rgb(14, 12, 12);
-    margin-left: 35px;
-    margin-right: 6px;
-    display: inline-block;
-    border: 12px solid rgb(19, 4, 223);
-    color: whitesmoke;
-    padding: 1.5em;
-    width: 140px;
-    font-size: 1.3em;
-    text-align: justify;
-}
-.clase-2{
-    background-color: rgb(0, 255, 98);
-    margin-left: 40px;
-    margin-right: 8px;
-    display: inline-block;
-    border: 12px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    padding: 1.9em;
-    width: 155px;
-    font-size: 1.3em;
-    text-align: justify;
-}
-.clase-3{
-    background-color: rgb(0, 38, 255);
-    margin-left: 40px;
-    margin-right: 8px;
-    display: inline-block;
-    border: 12px solid rgb(30, 179, 206);
-    color: rgb(255, 255, 255);
-    padding: 1.9em;
-    width: 155px;
-    font-size: 1.5em;
-    text-align: justify;
-}
-.clase-4{
-    background-color: rgb(173, 2, 2);
-    margin-left: 35px;
-    margin-right: 6px;
-    display: inline-block;
-    border: 12px solid rgb(201, 13, 144);
-    color: whitesmoke;
-    padding: 1.5em;
-    width: 140px;
-    font-size: 1.3em;
-    text-align: justify;
-}
-.clase-5{
-    background-color: rgb(245, 229, 4);
-    margin-left: 35px;
-    margin-right: 6px;
-    display: inline-block;
-    border: 12px solid rgb(4, 223, 223);
-    color: rgb(12, 9, 9);
-    padding: 1.5em;
-    width: 140px;
-    font-size: 1.3em;
-    text-align: justify;
-}
-.box_1, .box_2, .box_3{
-    margin: 40px;
-    width: 250px;
-    display: inline-block;
-    line-height: 0.1em;
-    font-size: 0.5em;
-}
-body{
-    text-align: center;
-    margin: 0;
-    border: 0;
-}
-#titulo_principal{
-    font-size: 4em;
-    color: rgb(243, 54, 7);
-    font-style: 'Lobster';
-    text-align: center;
-    font-family: 'Lobster','arial';
-}
-p{
-    text-align: center;
 }

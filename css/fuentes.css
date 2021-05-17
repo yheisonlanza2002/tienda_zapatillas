@@ -1,0 +1,36 @@
+h1 , h2 , h3 , p{
+    font-family: 'Lobster', cursive;
+    font-size: 2.8em;
+    text-align: center;
+}
+.fuente-regular { 
+    text-align: left;
+    font-weight: 400;
+}
+.fuente-bold {
+    text-align: left;
+    font-weight: bold;
+}
+.fuente-900 {
+    text-align: left;
+    font-weight: 900;
+}
+.fuente-italica {
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+}
+.fuente-italica-negrita {
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+}
+p.fuente-grande {
+    font-size: 40px;
+}
+p.fuente-negrita {
+    font-weight: 900;
+}
+p.fuente-italica {
+    font-style: italic;
+}

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+table{
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    width: 50%;
+    margin-top: 55px;
+    font-size: 1.2em;
+    border-collapse: collapse;
+}
+td , th {
+    border: 1.5px solid black;
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+a{
+    background-color:whitesmoke;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+.tienda{
+    background-color: rgb(255, 20, 20);
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-top-left-radius: 15px;
+}
+.replicas{
+    background-color: rgb(234, 14, 231);
+    color: white;
+    border-right: 0;
+    border-top: 0;
+    border-top-right-radius: 15px;
+}
+.zapatillas{
+    background-color:rgb(255, 0, 0) ;
+    color: white;
+}
+.originales{
+    background-color: rgba(255, 123, 0, 0.787);
+    color: white;
+}
+.triple{
+    background-color: rgb(255, 0, 98);
+    color: white;
+}
+.doble{
+    background-color: rgb(13, 13, 216);
+    color: white;
+}
+.si{
+    background-color:rgb(0, 255, 0);
+    color: black;
+}
+.no{
+    background-color: rgb(192, 192, 192);
+    color: black;
+}
+th{
+    background-color: whitesmoke;
+    color: black;
+}
