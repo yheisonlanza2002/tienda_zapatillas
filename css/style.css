@@ -44,22 +44,12 @@ a.decoracion{
 a.decoracion:hover{
     color: purple;
 }
-ul{
-    text-align: right;
+li{
     
     color: rgb(0, 0, 0);
-    padding: 29px;
+    padding: 15px;
     font-family: 'Cinzel', serif;
-    margin-left: 24px;
-    font-size: 23px;
-    display: inline;
-}
-.primero{
-    text-align: right;
+    font-size: 1.3em;
+    display: inline-block;
     background-color: rgb(37, 236, 193);
-    color: rgb(0, 0, 0);
-    padding: 29px;
-    font-family: 'Cinzel', serif;
-    margin-left: 24px;
-    font-size: 23px;
 }
