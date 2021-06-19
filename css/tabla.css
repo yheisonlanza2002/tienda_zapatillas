@@ -20,11 +20,35 @@ td , th {
     padding: 10px;
     font-family: 'Cormorant Garamond', serif;
 }
-a{
-    background-color:whitesmoke;
-    display: block;
-    text-align: center;
-    font-size: 2em;
+a.decoracion {
+    text-decoration: none;
+    color: black;
+}
+a.decoracion{
+    text-decoration: none;
+    color: black;
+}
+a.decoracion:hover{
+    color: purple;
+}
+#menu{
+    width: 100%;
+    color:black;
+    background-color: rgb(14, 227, 235);
+}
+li{
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3em;
+    display: inline-block;
+    background: rgb(14, 227, 235);
+}
+ul{
+    text-align: right;
+}
+.decoracion{
+    font-family: 'Cormorant Garamond', serif;
 }
 .tienda{
     background-color: rgb(255, 20, 20);

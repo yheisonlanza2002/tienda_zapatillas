@@ -1,0 +1,46 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+#nav-bar{
+    width: 100%;
+    color:black;
+    background-color: rgb(14, 227, 235,.9);
+    font-family: Helvetica, sans-serif;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#nav-bar-haiden{
+    width: 100%;
+    color:black;
+    background-color: rgb(14, 227, 235);
+    font-family: Helvetica, sans-serif;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+}
+ul{
+    text-align: right;
+}
+li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.3ems;
+}
+a.decoracion {
+    text-decoration: none;
+    color: black;
+}
+a.decoracion:hover{
+    color: purple;
+}
+.imagen{
+    float: left;
+    margin: 1.8em;
+}
+p{
+    font-size: 1.2em;
+    clear: both;
+    text-align: justify;
+}

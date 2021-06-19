@@ -1,7 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 p{
     font-size: 1.8em;
     font-family: 'Cinzel', serif;
-    text-align: right;
+    text-align: justify;
     color: black;
 }
 a.enlace-inicio{
@@ -9,17 +13,50 @@ a.enlace-inicio{
     color: black;
 }
 div.box_1, .box_2, .box_3{
-    margin: 45px;
-    width: 250px;
+    margin: 80px;
+    width: 270px;
     display: inline-block;
-    line-height: 0.1em;
+/*     line-height: 0.6em; */
     font-size: 0.9em;
-     color: black;
+    color: black;
+}
+.imagen{
+    margin: 0 auto 0 auto;
 }
 #titulo_principal{
     background-color: whitesmoke;
     font-size: 4em;
     color: rgb(243, 54, 7);
     text-align: center;
+    font-family: 'Cinzel', serif;
+}
+a.decoracion {
+    text-decoration: none;
+    color: black;
+}
+a.decoracion{
+    text-decoration: none;
+    color: black;
+}
+a.decoracion:hover{
+    color: purple;
+}
+#menu{
+    width: 100%;
+    color:black;
+    background-color: rgb(14, 227, 235);
+}
+li{
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3em;
+    display: inline-block;
+    background: rgb(14, 227, 235);
+}
+ul{
+    text-align: right;
+}
+.decoracion{
     font-family: 'Cinzel', serif;
 }
