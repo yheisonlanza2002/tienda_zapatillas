@@ -1,0 +1,18 @@
+.letra-larga {
+    letter-spacing: 3em;
+}
+.letra-corta{
+    letter-spacing: -.1em;
+}
+.palabras-largas{
+    word-spacing: 2em;
+}
+.palabras-cortas{
+    word-spacing: -.3em;
+}
+.lineas-cortas{
+    line-height: 3em;
+}
+.lineas-cortas{
+    line-height: .6em;
+}
