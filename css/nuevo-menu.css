@@ -3,14 +3,7 @@
     margin: 0;
 }
 h1{
-    text-align: left;
-    display: block;
-}
-.titulo{
-    position: absolute;
-    color: white;
-    top: 13px;
-    left: 20px;
+    text-align:center;
 }
 body{
     background: #fefefe;
@@ -22,51 +15,114 @@ header{
     width: 100%;
 }
 header nav{
-    background: rgb(222,1,8);
-    z-index: 10;
+    background: #011826;
     width: 100%;
-    margin: 0 auto;
 }
-header nav ul{
-   list-style: none;
-   text-align: right;
+nav ul{
+    list-style: none;
+    text-align: right;
 }
-header nav ul li{
+nav ul li{
     display: inline-block;
     position: relative;
 }
-header nav ul li a{
+nav ul li:hover{
+    background: #e6344a;
+}
+nav ul li a{
     color: white;
     display: block;
     text-decoration: none;
     padding: 20px;
 }
-header nav ul li a span{
-    margin-right: 10px;
-}
-header nav ul li:hover .children{
-    display: block;
-    z-index: 20%;
-    text-align: left;
-}
-header nav ul li .children{
+nav ul li .children{
     display: none;
     background: #011826;
-    text-align: left;
-    width: 150%;
     position: absolute;
+    text-align: left;
 }
-header nav ul li .children li{
+nav ul li:hover .children{
+    display: block;
+    width: 120%;
+    text-align: left;
+} 
+nav ul li .children li{
+    overflow: hidden;
     display: block;
     border-bottom: 2px solid rgba(255,255,255, .5);
-    overflow: hidden;
 }
-header nav ul li .children li a {
+nav ul li .children li a{
     display: block;
 }
-.main-content{
-    margin: 20px;
+nav ul li span{
+    margin-right: 10px;
 }
-.main-content p{
-    text-align: justify;
+nav ul li .children li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+}
+nav ul li .icon-chevron-small-down {
+    position: relative;
+    top:  3px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 800px){
+    body{
+        padding-top: 80px;
+    }
+    .menu-bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #e6344a;
+    }
+    .menu-bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    .menu-bar  span{
+        float: right;
+        font-size: 40px;
+    }
+    header nav{
+        height: cal(100% - 80px);
+        width: 80%;
+        position: fixed;
+        right: 20%;
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul {
+        text-align:left;
+    }
+    header nav ul li {
+        display: block;
+        border-bottom: 2px solid rgba(255, 255,255, .5);
+    }
+    header nav ul li a{
+        padding: 20px;
+        display: block;
+    }
+    header nav ul li .children{
+        position: relative;
+        width: 100%;
+    }
+    header nav ul li .children li a{
+        margin-left: 20px;
+    }
+    nav ul li .icon-chevron-small-down{
+        float: right;
+    }
+    nav ul li:hover .children{
+        display: none;
+    }
 }

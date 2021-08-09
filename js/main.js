@@ -1,11 +1,11 @@
-$(documeto).ready(main);
+$(document).ready(main);
 
 var contador = 1;
 
 function main() {
-    $('.menu_bar').click(function(){
+    $('.menu-bar').click(function(){
         if (contador == 1) {
-            $('nav').animete({
+            $('nav').animate ({
                 left: '0'
             });
             contador = 0;
@@ -17,7 +17,7 @@ function main() {
             });
         }
     });
-    $('submenu').click(function(){
-        $(this).children('.children').slideToggle()
+    $('.submenu').click(function(){
+        $(this).children('.children').slideToggle();
     });
 }
