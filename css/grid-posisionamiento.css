@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    width: 90%;
+    max-width: 1000px;    
+    border: 10px solid black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    grid-gap:15px;
+}
+.contenedor > div{
+    display: block;
+    background-color: rgb(216, 37, 37);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(0,0,0,.25);
+}
+.contenedor .item-1 {
+    background: rgb(12, 209, 199);
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
