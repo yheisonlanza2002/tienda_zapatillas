@@ -5,10 +5,11 @@
 .page-content{
     display: grid;
     grid-template: 
-                    "header header header"  
-                    "navbar navbar navbar"  
-                    "article article article" 
-                    "section section section"; 
+                    "header   nav   nav"  80px
+                    "article  article  artocle"  100px
+                    /* "article article article"  */
+                    /* "section section section";  */ /
+                     1fr          1fr       1fr;
 }
 header,nav,article,section{
     padding: 30px;
@@ -20,16 +21,16 @@ header,nav,article,section{
     background-color: blueviolet;
     grid-area: header;
 }
-.navbar{
+nav{
     background-color: burlywood;
-    grid-area: nabvar;
+    grid-area: nav;
 }
-.article{
+/* .article{
     background-color: limegreen;
     grid-area: imagen;
 
-}
-.section{
+} */
+/* .section{
     background-color: magenta;
     grid-area: imagen;
-}
+} */
