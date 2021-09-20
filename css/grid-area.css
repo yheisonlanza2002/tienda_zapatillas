@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.page-content{
+    display: grid;
+    grid-template:  "header header"     100px
+                    "navbar navbar"     100px
+                    "section article"   auto
+                    "section sidebar "  200px
+                    "footer footer"     100px /
+                    400px     auto;
+}
+header,nav,article,section,aside,footer {
+    padding: 20px;
+    font-size: 1.6em;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header{
+    background-color:rgb(58, 143, 143);
+    grid-area: header;
+}
+.navbar{
+background-color: rgb(41, 104, 41);
+grid-area: navbar;
+}
+.article{
+    /* background-color: burlywood; */
+    grid-area: article;
+}
+.section{
+    /* background-color: rgb(107, 46, 206); */
+    grid-area: section;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    
+}
+.sidebar{
+    background-color: cyan;
+    grid-area: sidebar;
+}
+.footer{
+    background-color: darkgrey;
+    grid-area: footer;
+}
+input[type-submit]{
+    background-color:red;
+}

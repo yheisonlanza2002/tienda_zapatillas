@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page-content{
+    display: grid;
+    grid-template: 
+                    "header header header"  
+                    "navbar navbar navbar"  
+                    "article article article" 
+                    "section section section"; 
+}
+header,nav,article,section{
+    padding: 30px;
+    font-size: 1.6em;
+    border: 1px solid black;
+    text-align: center;
+}
+.header{
+    background-color: blueviolet;
+    grid-area: header;
+}
+.navbar{
+    background-color: burlywood;
+    grid-area: nabvar;
+}
+.article{
+    background-color: limegreen;
+    grid-area: imagen;
+
+}
+.section{
+    background-color: magenta;
+    grid-area: imagen;
+}
