@@ -7,7 +7,7 @@
     margin: 0 auto;
     gap: 30px;
     display: grid;
-    grid-template: "header         header            header"            100px
+    grid-template: "header         nav            nav"            100px
                    "img-principal  img-principal  img-principal"  350px
                    "news-1         news-2         news-3"         auto 
                    "news-4         news-5         news-6"         auto /
@@ -34,7 +34,7 @@
 }
 .img-principal {
     grid-area: img-principal;
-    background: rgb(32, 255, 255);
+    background: rgb(14, 77, 77);
 }
 .img-article {
     height: 250px;
