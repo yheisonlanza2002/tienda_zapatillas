@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+    display: grid;
+    grid-template: "header         header            header"            100px
+                   "img-principal  img-principal  img-principal"  350px
+                   "news-1         news-2         news-3"         auto 
+                   "news-4         news-5         news-6"         auto /
+                    1fr            1fr            1fr;
+}
+.header, .img-principal, .img-article,.menu {
+    border-radius: 10px;
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    grid-area: header;
+    background: rgb(10, 233, 77);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 15px;
+}
+.menu{
+    grid-area: nav;
+    background-color: aqua;
+}
+.img-principal {
+    grid-area: img-principal;
+    background: rgb(32, 255, 255);
+}
+.img-article {
+    height: 250px;
+    background: rgb(255, 60, 60);
+}
+.parrafo-articulo {
+    margin-top: 1.5em;
+    line-height: 1.4em;
+    font-size: 1.5em;
+    color: black;
+    text-align: justify;
+}
+.news-1 {
+    grid-area: news-1;
+}
+.news-2 {
+    grid-area: news-2;
+}
+.news-3 {
+    grid-area: news-3;
+}
+
+@media only screen and (max-width: 1024px){
+    .main-container {
+        width: 85%;
+        grid-template: "header         header"         90px
+                       /* "nav            nav"            90px */
+                       "img-principal  img-principal"  auto
+                       "news-1         news-2"         auto 
+                       "news-3         news-4"         auto
+                       "news-5         news-6"         auto /
+                        1fr            1fr;
+    }
+
+}
+@media only screen and (max-width: 640px){
+    .main-container {
+        width: 85%;
+        grid-template: "header"         80px
+                       /* "nav"            80px */
+                       "img-principal"  260px
+                       "news-1"         auto 
+                       "news-2"         auto
+                       "news-3"         auto
+                       "news-4"         auto 
+                       "news-5"         auto
+                       "news-6"         auto /
+                        1fr;
+    }
+    .news {
+        font-size: .8em;
+    }
+
+
+}
