@@ -7,38 +7,79 @@
     margin: 0 auto;
     gap: 30px;
     display: grid;
-    grid-template: "header         header            header"            100px
+    grid-template: "header         header         header"         100px
                    "img-principal  img-principal  img-principal"  350px
-                   "news-1         news-2         news-3"         auto 
-                   "news-4         news-5         news-6"         auto /
+                   "news-1         news-2         news-3"         auto  /
                     1fr            1fr            1fr;
 }
-.header, .img-principal, .img-article,.menu {
-    border-radius: 10px;
+.header, .img-principal, .img-article1, .img-article2,.img-article3,.menu {
+    /* border-radius: 10px; */
+    /* width: 110%; */
     color: white;
     font-size: 1.8em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+h2{
+    text-align: center;
+}
 .header {
     grid-area: header;
-    background: rgb(10, 233, 77);
+    /* background: rgb(10, 233, 77); */
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 15px;
+}
+.logo{
+    /* background-color: aqua; */
+    padding: 20px;
+    margin-right: 200px;
+    width: 70px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
 }
 .menu{
     grid-area: nav;
     background-color: aqua;
 }
-.img-principal {
+.img-principal{
+    background-image: url(../img/principalll.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
     grid-area: img-principal;
     background: rgb(32, 255, 255);
 }
-.img-article {
+
+/* .header{
+    background-image: url(../img/span.jpeg);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+*/
+.img-article1 {
     height: 250px;
-    background: rgb(255, 60, 60);
+    /* background: rgb(255, 60, 60); */
+    background-image: url(../img/baños.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-article2 {
+    height: 250px;
+    /* background: rgb(255, 60, 60); */
+    background-image: url(../img/belleza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-article3 {
+    height: 250px;
+    /* background: rgb(255, 60, 60); */
+    background-image: url(../img/maquillaje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .parrafo-articulo {
     margin-top: 1.5em;
@@ -57,18 +98,19 @@
     grid-area: news-3;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and  (max-width: 1024px){
     .main-container {
         width: 85%;
         grid-template: "header         header"         90px
                        /* "nav            nav"            90px */
-                       "img-principal  img-principal"  auto
+                       "img-principal  img-principal"  250px
                        "news-1         news-2"         auto 
-                       "news-3         news-4"         auto
-                       "news-5         news-6"         auto /
+                       "news-3         news-3"        auto /
                         1fr            1fr;
     }
-
+    .img-article{
+        height: 250px;
+    }
 }
 @media only screen and (max-width: 640px){
     .main-container {
@@ -78,10 +120,7 @@
                        "img-principal"  260px
                        "news-1"         auto 
                        "news-2"         auto
-                       "news-3"         auto
-                       "news-4"         auto 
-                       "news-5"         auto
-                       "news-6"         auto /
+                       "news-3"         auto /
                         1fr;
     }
     .news {
