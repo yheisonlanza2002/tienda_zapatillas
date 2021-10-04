@@ -61,7 +61,11 @@ a {
     margin: 0 auto;
     gap: 30px;
     display: grid;
+<<<<<<< HEAD
     grid-template: "header         header         header"         100px
+=======
+    grid-template: "header         nav            nav"            100px
+>>>>>>> 2f0508f05767f3aaa4d18a7ac1b2d33c9370bd9c
                    "img-principal  img-principal  img-principal"  350px
                    "news-1         news-2         news-3"         auto  /
                     1fr            1fr            1fr;
@@ -106,7 +110,7 @@ h2{
 }
 section{
     grid-area: img-principal;
-    background: rgb(32, 255, 255);
+    background: rgb(14, 77, 77);
 }
 
 /* .header{
