@@ -1,0 +1,12 @@
+.col-style{
+    background-color: antiquewhite;
+}
+[class^="col"]{
+    border: 2px solid black;
+}
+[class^="container"]{
+    height: 150px;
+}
+.container-resp{
+    background-color: grey  ;
+}

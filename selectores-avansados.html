@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectores avansados</title>
+    <link rel="stylesheet" href="css/selectores-avanzados.css">
+</head>
+<body>
+    <h1>selectores avansado</h1>
+    <div class="bloque">
+        <h2>selector......................... elemeto_padre elemento_hijo</h2>
+        <h3>aplica para todos los desendientes del elemento</h3>
+        <div class="box-main box-main-1">
+            <div class="general-box box-sub-hijo-1">box 1
+            <div class="general-box box-sub-nieto">
+                box 1-1
+            </div>
+        </div>
+        <div class="general-box box-sub-hijo-2">box 2</div>
+        </div>
+        <div class="general-box">box 3</div>
+    </div>
+
+    
+    <div class="bloque">
+        <h2>selector .............................></h2>
+        <h3>aplica para todos los desendientes directos del elemento padre</h3>
+        <div class="box-main box-main-2">
+            <div class="general-box box-sub-hijo-1">box 1
+            <div class="general-box box-sub-nieto">
+                box 1-1
+            </div>
+        </div>
+        <div class="general-box box-sub-hijo-2">box 2</div>
+        </div>
+        <div class="general-box">box 3</div>
+    </div>
+    <div class="bloque">
+        <h2>selector .............................+</h2>
+        <h3>aplica para el elemento hermano adyacente</h3>
+        <div class="box-main box-main-3">
+            <div class="general-box box-sub-hijo-1">box 1
+            <div class="general-box box-sub-nieto">
+                box 1-1
+            </div>
+        </div>
+        <div class="general-box box-sub-hijo-2">box 2</div>
+        </div>
+        <div class="general-box box-3">box 3</div>
+        <div class="general-box box-4">box 4</div>
+    </div>
+    <div class="bloque">
+        <h2>selector ............................. ~</h2>
+        <h3>aplica para todos los elementos hermanos</h3>
+        <div class="box-main box-main-4">
+            <div class="general-box box-sub-hijo-1">box 1
+            <div class="general-box box-sub-nieto">
+                box 1-1
+            </div>
+        </div>
+        <div class="general-box box-sub-hijo-2">box 2</div>
+        </div>
+        <div class="general-box box-3">box 3</div>
+        <div class="general-box box-4">box 4</div>
+    </div>
+    <div class="bloque">
+        <h2>selector ............................. ^</h2>
+        <h3>aplica para todos los elementos con caracteres en comun</h3>
+        <div class="box-main box-main-5">
+            <div class="general-box box-sub-hijo-1">box 1
+            <div class="general-box box-sub-nieto">
+                box 1-1
+            </div>
+        </div>
+        <div class="general-box box-sub-hijo-2">box 2</div>
+        </div>
+        <div class="general-box box-3">box 3</div>
+        <div class="general-box box-4">box 4</div>
+    </div>
+</body>
+</html>     

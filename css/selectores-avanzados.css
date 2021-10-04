@@ -1,0 +1,37 @@
+.general-box {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.bloque{
+    clear: both;
+}
+div.general-box{
+    float: left;
+}
+.box-main-1 div{
+    background-color: lime;
+}
+.box-main-2 > div {
+    background-color: goldenrod;
+}
+.box-main-3 + div {
+    background-color: #fb5b04;
+}
+.box-main-4 ~ div{
+    background-color: rgb(66 ,136 ,244);
+}
+.box-main-5 [class^="gen"]{
+    background-color: rgb(58,162,83);
+}
+.box-sub-hijo-1{
+    margin-right: 310px;
+}
+.box-sub-nieto{
+    margin-left: 310px;
+    margin-top: -20px;
+}
+.box-sub-hijo-2{
+    margin-right: 0px;
+}
