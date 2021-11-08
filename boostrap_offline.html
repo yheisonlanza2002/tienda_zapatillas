@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/boostrap_offline.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Boostrap Offline</title>
+</head>
+<body>
+<h1>Boostrap Offline</h1>
+        <div class="container style-container">
+            <div class="row">
+                <h2>Formulario de control Basico</h2>
+                <div class="mb-3 col-12">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electronico">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+ 
+ <div class="container style-container">
+    <div class="row">
+        <h2>Input File</h2>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Opcion para selecionar un solo archivo</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+    </div>
+    <div class="row">
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Opcion para seleccionar multiples archivos</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Datalist</h2>
+        <label for="exampleDataList" class="form-label">Seleccione el municipio de residencia</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Ingrese Municipio...">
+            <datalist id="datalistOptions">
+            <option value="Palestina">
+            <option value="Pitalito">
+            <option value="Suaza">
+            <option value="Acevedo">
+            <option value="San Agustin">
+            </datalist>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Select</h2>
+        <select class="form-select" aria-label="Selecione el lenguaje ">
+            <option selected>Seleccione el lenguaje de programacion que mas utiliza</option>
+            <option value="1">Javascript</option>
+            <option value="2">PHP</option>
+            <option value="3">C#</option>
+            <option value="4">PHYTON</option>
+            <option value="5">JAVA</option>
+          </select>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Check</h2>
+        <h4>Seleccione las librerias y frameworks que utiliza para desarrollo</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckReact">
+            <label class="form-check-label" for="flexCheckReact">
+              React
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckAngular">
+            <label class="form-check-label" for="flexCheckAngular">
+              Angular
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckVue">
+            <label class="form-check-label" for="flexCheckVue">
+              Vue
+            </label>
+          </div>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Radio</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioHombre">
+            <label class="form-check-label" for="flexRadioHombre">
+             Hombre
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMujer">
+            <label class="form-check-label" for="flexRadioMujer">
+              Mujer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioIndeterminado">
+            <label class="form-check-label" for="flexRadioIndeterminado">
+              Indeterminado
+            </label>
+          </div>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Floating labels</h2>
+        <div class="form-floating mb-3 col-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Nombres</label>
+          </div>
+          <div class="form-floating mb-3 col-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Apellidos</label>
+          </div>
+          <div class="form-floating mb-3 col-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Telefono</label>
+          </div>
+          <div class="form-floating mb-3 col-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Direccion</label>
+          </div>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Validacion</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="valid-feedback">
+                Campo diligenciado correctamente!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Campo diligenciado correctamente! 
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Por favor, ingrese una usuario valido.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Por favor, ingrese una ciudad valida.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Municipio</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Selecciones</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleione un municipio valido.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Por favor, seleione una direccion valida.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                 Aceptar terminos y condiciones.
+                </label>
+                <div class="invalid-feedback">
+                 Para continuar debe aceptar los terminos y condiciones.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+    </div>
+</div>
+
+<div class="container style-container">
+    <div class="row">
+        <h2>Alert</h2>
+        <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary col-2" id="liveAlertBtn">Mostar Alerta</button>    
+       </div>
+</div>
+<div class="container style-container">
+    <div class="row">
+        <h2>Alert con icono</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+          </svg>
+          
+          <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+            <div>
+              An example alert with an icon
+            </div>
+          </div>
+          <div class="alert alert-success d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+            <div>
+              An example success alert with an icon
+            </div>
+          </div>
+          <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+              An example warning alert with an icon
+            </div>
+          </div>
+          <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+              An example danger alert with an icon
+            </div>
+          </div>
+    </div>
+
+   <div class="container style-container">
+        <h2>Buttons</h2>
+          <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <div class="container style-container">
+        <h2>Carousel</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Crioto1-1600x1000.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Vive</h5>
+                  <p>La vida es mucho mas que respirar.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Crioto2-1600x1000.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Reir</h5>
+                  <p>No es solamente es vivir, es disfrutar.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Crioto3-1600x100.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Felicidad</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="container style-container">
+          <h2>Individual .carousel-item interval</h2>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="img/Crioto3-1600x100.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/Crioto2-1600x1000.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/Crioto1-1600x1000.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="container style-container">
+      <h2>Accordion</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+        
+  </div>
+  <div class="container style-container">
+    <h2>Accordion 2</h2>
+    <div class="accordion accordion-flush col-3" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Aprendizaje
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <a href="#"><div class="accordion-body">formacion en ejecucion</div></a>
+          <a href="#"><div class="accordion-body">tareas</div></a>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">ajja</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">sgghdgfd</div>
+        </div>
+      </div>
+    </div>
+      
+</div>
+<div class="container style-container">
+  <h2>badges</h2>
+  <button type="button" class="btn btn-primary position-relative">
+    Profile
+    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+      <span class="visually-hidden">New alerts</span>
+    </span>
+  </button>   
+  <button type="button" class="btn btn-primary position-relative">
+    Inbox
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>
+</div>
+<div class="container style-container">
+  <h2>breadcrumb</h2>
+  <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+</div>
+<div class="container style-container">
+  <h2>card</h2>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="card space-elements col-3" style="width: 18rem;">
+      <img src="img/adidas_300x220.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Adidas max</h5>
+        <p class="card-text">$ 3000000</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card space-elements col-3" style="width: 18rem;">
+      <img src="img/adidas_300x220.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card space-elements col-3" style="width: 18rem;">
+      <img src="img/adidas_300x220.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+<div class="container style-container">
+  <h2>modal</h2>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  proceder a la compra.
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">aprovar coompra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        su compra ha sido llevada con exito
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+        <button type="button" class="btn btn-primary">continuar comprando</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="container style-container">
+  <h2>off canvas</h2>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">ofertas</button>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">mejores precios</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>obtenga un descuentazo</p>
+      <div>
+        <h2>Adidad max</h2>
+        <img width="200px" src="img/adidas_300x220.jpg" alt="">
+        <p>$ 300000</p>
+      </div><br>
+      <div>
+        <h2>Jordan</h2>
+        <img width="200px" src="img/air-jordan-1-.jpg" alt="">
+        <p>$ 400000</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container style-container">
+  <h2>pagination</h2>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="container style-container">
+  <h2>popover</h2>
+  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="informacion y cosas que quieres mostrar">
+    <button class="btn btn-primary" type="button" disabled>informacion general</button>
+  </span>
+</div>
+<div class="container style-container">
+  <h2>toasts</h2>
+  <button type="button" class="btn btn-primary" id="liveToastBtn">ventana emergente </button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img width="40px" src="img/logo.png" class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, yheison 
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="container style-container">
+  <h2>tooltips</h2>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+    Tooltip with HTML
+  </button>
+</div>
+
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/boostrap-offline.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
