@@ -56,6 +56,33 @@ a {
     font-weight: 900;
     font-family: helvetica, arial, sans-serif;
 }
+a:hover{
+    /* background-color: gray;
+    color: red;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 3px; */
+    color: white;
+    
+
+}
+ul{
+    /* background-color: violet; */
+
+}
+li{
+    margin-top: -10px;
+}
+li:hover{
+    background-color: gray;
+    /* color: red; */
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 3px;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
 .icono-spa {
     position: fixed;
     top: 10px;
