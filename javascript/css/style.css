@@ -1,0 +1,15 @@
+.special-fields{
+    padding: 10px;
+    margin: 20px;
+    width: 30vh;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px black;
+    border-radius: 2px;
+
+}
+.formulario{
+    padding: 10px;
+    margin: 50px;
+    width: 30vh;
+}
