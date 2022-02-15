@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipular imagenes </title>
+    <script src="js/28-manipularImagenesTexto.js"></script>
+    <link rel="stylesheet" href="css/28-manipularImagenesTexto.css">
+</head>
+<body>
+    <h2>Intercambiando imagenes haciendo onmauserover</h2>
+    <img id="imagen" src="img/dubai.jpg" alt="dubai" onmouseover="imagenes(id, 'img/dubai2.jpg');" onmouseleave="retornoImagen()";><br>
+        <h3>haciendo invisible la img</h3>
+    <img id="dubai-invisible" 
+    src="img/dubai2.jpg" 
+    onmouseover="ocultarImg()" 
+    onmouseleave="mostrarImg()"  
+    alt="dubai">
+</body>
+</html>

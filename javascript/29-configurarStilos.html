@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>configurar estilos</title>
+    <link rel="stylesheet" href="css/29-configurarStilos.css">
+    <script src="js/29-configurarStilos.js"></script>
+</head>
+<body>
+    <h1>configurando estilos desde javascript</h1>
+    <p id="parrafo-principal" onmouseover="fuenteGrande();">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium, consectetur aperiam exercitationem possimus non eligendi cum et inventore saepe animi nesciunt eius ipsa consequuntur nisi accusantium, odit delectus sint explicabo deleniti repellendus perspiciatis eveniet. Dignissimos libero molestiae architecto, maxime distinctio dolore est officiis. Animi consectetur iure expedita culpa accusamus.</p>
+    <h2>Fuentes especiales</h2>
+    <p id="segundo-parrafo" onmouseover="fuenteEspecial();">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ad adipisci quibusdam voluptatum maiores minima aut quam illo dicta eos modi, quisquam aperiam a labore earum quidem explicabo culpa repudiandae! Autem, sed vel, porro perferendis sint in obcaecati sunt aut cum nulla recusandae. Alias suscipit repellendus dolorum, voluptatem ipsam qui!</p>
+
+    <h2>imagen desaparese al pasar el cursor po ensima</h2>
+
+        <img src="img/dubai.jpg" 
+        id="Imginvisible"
+        onmouseover="Imginvisible();" 
+        onmouseleave="ImgVisible();" alt="dubai">
+
+    <h2>imagen se mueve un poco a la derecha al pasar el cursor por ensima</h2>
+
+    <img src="img/dubai2.jpg"
+    id="margin"
+    onmouseover="comMargernes();" 
+    onmouseleave="restableserImg();" alt="dubai">
+
+    <h2>la imagem flota a la derecha al pasar el mouse por ensima</h2>
+
+    <img src="img/dubai3.jpg"
+    id="flotar"
+    onmouseover="flotarIzquie();"
+    onmouseleave="flotarDerecha();" alt="dubai">
+</body>
+</html>
