@@ -15,16 +15,18 @@
         onfocus="this.style.backgroundColor='whitesmoke'"
         onblur="this.style.backgroundColor='gray'">
         Apellidos <br>
-        <input type="text" class="special-fields">
+        <input type="text" class="special-fields"
+        onfocus="this.style.backgroundColor='whitesmoke'"
+        onblur="this.style.backgroundColor='gray'">
     </div>
 
-    <form action="" onsubmit="validarInfo('numeroDocumento')">
+    <form action="" onsubmit="return validarInfo()">
         Numero Documento <br>
-        <input type="text" name="" id="numeroDocumento"  class="special-fields"><br>
+        <input type="text" name="numeroDocumento" id="numeroDocumento"  class="special-fields"><br>
         Nombre Usuario <br>
-        <input type="text" name="" id="nombreUsuario" class="special-fields"><br>
+        <input type="text" name="nombreUsuario" id="nombreUsuario" class="special-fields"><br>
 
-        <input type="submit" value="enviar">
+        <input type="submit" value="enviar" name="enviar">
     </form>
 </body>
 </html>

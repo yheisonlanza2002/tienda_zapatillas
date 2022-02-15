@@ -1,7 +1,18 @@
-function validarInfo(numeroDocumento){
-    let numeroDocu = document.getElementById(numeroDocumento).value;
+function validarInfo(){
+    var valinfor = true;
 
-if(numeroDocu === ""){
-    alert('el numero de documento no puede estar vacio');
+    let numeroDocu = document.getElementById("numeroDocumento").value;
+
+if(isNaN(numeroDocu)){
+    alert('se reciben solo numeros');
+    valinfor = false;
     }
+
+    let usuario =    document.getElementById("nombreUsuario").value;
+if(usuario==null || usuario==""){
+    alert('el usuario no puede estar vacia');
+    valinfor = false;
+}
+ return valinfor;
+
 }

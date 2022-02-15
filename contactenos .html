@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>CONTACTENOS </title>
+    <script src="js/confirmacion.js"></script>
 </head>
 <body>
     <h1>contactenos </h1>
-    <form action="confirmacion.html" method="post">
+    <!-- en el form va esta direccion para ingresar action="confirmacion.html" -->
+    <form  action="confirmacion.html" method="post" onsubmit="return validar()">
         <fieldset>
         <legend>ingrese la informacion </legend>
         ingrese su nombre <br><br>
-        <input type="text" name="Nombre"> <br>
+        <input type="text" name="Nombre" id="Nombre" > <br>
         ingrese su apellido <br><br>
-        <input type="text" name="Apellido"> <br><br>
+        <input type="text" name="Apellido" id="Apellido"> <br><br>
         genero <br><br>
-        <input type="radio" name="genero" value="masculino">masculino<br>
-        <input type="radio" name="genero" value="femenino">femenino<br>
-        <input type="radio" name="genero" value="indeterminado">indeterminado<br><br>
+        <input type="radio" name="genero" id="mascu" value="masculino">masculino<br>
+        <input type="radio" name="genero" id="feme" value="femenino">femenino<br>
+        <input type="radio" name="genero" id="indefi" value="indeterminado">indeterminado<br><br>
         tipo de zapatillas que te gustan <br><br>
-        <input type="checkbox" name="zapatillas-que-gusta" value="nike"> nike<br>
-        <input type="checkbox" name="zapatillas-que-gusta" value="jordan"> jordan<br>
-        <input type="checkbox" name="zapatillas-que-gusta" value="adidas"> adidas<br>
-        <input type="checkbox" name="zapatillas-que-gusta" value="under armour"> under armouls<br><br>
+        <input type="checkbox" name="zapatillas" id="nike" value="nike"> nike<br>
+        <input type="checkbox" name="zapatillas" id="jordan" value="jordan"> jordan<br>
+        <input type="checkbox" name="zapatillas" id="adidas" value="adidas"> adidas<br>
+        <input type="checkbox" name="zapatillas" id="under" value="under armour"> under armouls<br><br>
         ciudad <br>
-        <select name="municipio">
+        <select name="ciudad" id="ciudad">+
+            <option value="">Seleccionar una ciudad </option><br>
            <option value="bogota">bogota </option><br>
            <option value="cali">cali </option><br>
            <option value="pitalito">pitalito </option><br>
@@ -40,7 +43,7 @@
            <option value="santander">santander </option><br>
            <option value="villavicencio">villavicencio</option><br>
         </select><br><br>
-        <input type="submit" value="enviar"><br><br>
+        <input type="submit" value="enviar" name="enviar"><br><br>
     </fieldset>
      </form>
     <h2>
