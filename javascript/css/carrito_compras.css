@@ -1,0 +1,11 @@
+input[type="button"]{
+    background-color: rgb(184, 184, 184);
+    color: black;
+    width: 2%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+}
+label{
+    font-size: 1.1em;
+}
