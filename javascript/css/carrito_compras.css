@@ -1,11 +1,91 @@
+.contenedorP{
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 1em;
+    margin-top: 40px ;
+    display: grid;
+    grid-template-columns: 40px      40px     40px     40px     200px;
+    grid-template-areas:   "conten1  conten1  conten1  conten1  conten1"
+                           "conten2  conten2  conten2  conten2  conten2"
+                           "imagen   imagen   imagen   imagen   descripcion" 
+                           "imagen   imagen   imagen   imagen   descripcion"
+                           "botones  botones  botones  botones  btnEliminar"
+                           "botones  botones  botones  botones  guardar"
+                           "texto    texto    texto    texto    texto" ;
+}
+.conten1{
+    grid-area: conten1;
+    font-size: 1.3em;
+    background-color: yellow;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.conten2{
+    grid-area: conten2;
+    border-bottom: 1px solid gray;
+    height: 30px;
+    font-size: 1.3em; 
+}
+.imagen{
+    grid-area: imagen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.botones{
+    grid-area: botones;
+    /* background-color: gray; */
+    margin: 0 auto;
+    width: 60%;
+}
+.btnEliminar{
+    grid-area: btnEliminar;
+}
+.guardar{
+    grid-area: guardar;
+}
+.texto{
+    grid-area: texto;
+    text-align: center;
+}
+.resta{
+    grid-area: restar;
+}
+.sumar{
+    grid-area: sumar;
+}
+.disponible{
+    color: green;
+}
+input[type="checkbox"]{
+    font-size: 1.5em;
+    background-color: aqua;
+}
 input[type="button"]{
-    background-color: rgb(184, 184, 184);
-    color: black;
-    width: 2%;
+    background-color: transparent;
     border-radius: 5px;
     border: none;
-    font-size: 1.2em;
+    height: 25px;
+    border-top: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
 }
-label{
-    font-size: 1.1em;
+a{
+    text-decoration: none;
+    color: rgb(1, 94, 94);
+}
+a:hover{
+    color: gray ;
+}
+.precio{
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+
 }

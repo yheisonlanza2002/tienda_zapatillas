@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
-    
     <link rel="stylesheet" href="css/carrito_compras.css">
 </head>
 <body>
-    <input type="button" onclick="disminuirPedido()" value="-">
-    <label id="cantidadElementos">1</label>
-    <input type="button" onclick="aumentarPedido()" value="+">
-    
-    
-    <script src="js/carrito_compras.js"></script>
+    <div class="contenedorP">
+        <div class="conten1">Proceder al pago(<label id="numeroProductos"><label id="cantidadDeDroductos"></label><label>)</div>
+        <div class="conten2"><input type="checkbox" name="" id="">Envia como regalo. Devolucion facil</div>
+        <div class="imagen"><img src="img/it_300x450.jpg" width="140px" alt=""></div><br>
+        <div class="descripcion">
+            <p>hola soy yheison
+                holis Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <label>les presento a it el payaso diabolico que te va a llevar el alma ajajj</label><br><br>
+            <label>COP:</label><label  id="valorUnitario" class="precio"></label><br><br>
+            <label class="disponible" >disponible</label>
+        </div><br><br>
+        <div class="botones">
+            <input type="button" onclick="disminuirPedido()" value="-">
+            <label id="cantidadElementos">1</label>
+            <input type="button" onclick="aumentarPedido()" value="+">
+        </div><br><br>
+        <div class="btnEliminar">
+            <input type="button" value="Eliminar">
+        </div>
+        <div class="guardar" ><input type="button" value="Guardar para mas tarde"></div>
+        <div class="texto"><a href="#">Comparar con articulos similares</a></div>
+    </div>
+    <script src="js/carrito_compras.js"> </script>
 </body>
 </html>
