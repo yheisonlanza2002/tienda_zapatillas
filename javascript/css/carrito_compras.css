@@ -5,7 +5,8 @@
     margin-top: 40px ;
     display: grid;
     grid-template-columns: 40px      40px     40px     40px     200px;
-    grid-template-areas:   "conten1  conten1  conten1  conten1  conten1"
+    grid-template-areas:   "contenSutTotal contenSutTotal contenSutTotal contenSutTotal contenSutTotal"
+                           "conten1  conten1  conten1  conten1  conten1"
                            "conten2  conten2  conten2  conten2  conten2"
                            "imagen   imagen   imagen   imagen   descripcion" 
                            "imagen   imagen   imagen   imagen   descripcion"
