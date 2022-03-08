@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla productos</title>
+    <link rel="stylesheet" href="css/tabla_productos_javascript.css">
+</head>
+<body>
+    <div class="conten">
+        <form action="">
+            <fieldset>
+            <div class="main-content">
+
+                <div class="content">
+                    <h1>Registro De Productos</h1>
+                </div>
+                <div class="content-1">
+                    <label>Codigo de Producto</label>                
+                </div>
+                    <div class="content-1-1">
+                        <input id="codigo"><br><br>
+                    </div>
+                <div class="content-2">
+                    <label>Descripcion</label>
+                </div>
+                    <div class="content-2-2">
+                        <input id="descripcion"><br><br>
+                    </div>
+                <div class="content-3">
+                    <label>Valor Unitario</label>
+                </div>
+                    <div class="content-3-3">
+                        <input id="ValorUNitario">
+                    </div>
+                <div class="content-4">
+                    <label>Unidades en Stock</label><br><br>
+                </div>
+                    <div class="content-4-4">
+                        <input id="UnidadesStock">
+                    </div>
+                <div class="content-5">
+                    <input class="style_button" type="button" value="Cargar Productos" onclick="CargarProducto()">
+                </div>
+            </div>
+            </fieldset>
+        </form>    
+    </div><br><br><br>
+
+    <div id="table_js"></div>
+
+
+    <script src="js/tabla_productos_javascript.js"></script>
+</body>
+</html>
