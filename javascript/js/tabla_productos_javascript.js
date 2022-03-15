@@ -76,10 +76,10 @@ function RegisterDate(){
     LimpiarFormulario();
 }
 function LimpiarFormulario(){
-    document.getElementById("codigo").innerHTML = "";
-    document.getElementById("descripcion").innerHTML = "";
-    document.getElementById("ValorUNitario").innerHTML = "";
-    document.getElementById("UnidadesStock").innerHTML = "";
+    document.getElementById("codigo").value = "";
+    document.getElementById("descripcion").value = "";
+    document.getElementById("ValorUNitario").value = "";
+    document.getElementById("UnidadesStock").value = "";
 }
 function ValidarFormulario(){
     if(document.getElementById("codigo").value.trim() == ""){
