@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background-color: rgb(255, 230, 0);
+    padding: 22px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 10%             80%            10%;
+    grid-template-areas:   "menu          input           carrito";
+
+}
+.menu{
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    grid-area: input;
+}
+input[type="text"]{
+    border-radius: 15px;
+    border: none;
+    width: 95%;
+    padding: 8px;
+    outline: none;
+}
+.carrito{
+    grid-area: carrito;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-contentImg{
+    margin: 1%;
+    display: grid;
+    border-bottom: solid 1px gray;
+    padding: 1%;
+    grid-template:  "img-style          style-mara"   40px
+                    "img-style          style-modelo" 40px
+                    "img-style          style-año"    40px
+                    "img-style           empty"       auto/
+                      auto                 1fr;
+                    
+}
+.img-style{
+    grid-area: img-style;
+    
+}
+.style-mara{
+    font-size: 1.3em;
+    font-weight: 800;
+    text-align: left;
+    padding-left: 10px;
+    grid-area: style-mara;
+}
+.style-modelo{
+    text-align: left;
+    grid-area: style-modelo;
+}
+.style-año{
+    text-align: left;
+    grid-area: style-año;
+}
