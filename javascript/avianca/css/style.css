@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-color: white;
+}
+.logoAvianca{
+    padding:10px;
+}
+.fa-plane-departure{
+    display: flex;
+    background-color: aqua;
+    font-size: 5em;
+}
+
+.content-main{
+    margin: 1%;
+    border-radius: 5px;
+    background-color: white;
+    display: grid;
+    grid-template: "styleEconomico            empty             empty"         35px 
+                     "styleSalida         styleTextoDuracion     styleLlegada"     25px 
+                   "style-origen           styleDuracion       style-destino"     35px 
+                   "linea                     linea              linea"            10px
+                   "style-VueloDirecto    style-VueloDirecto             style-precio"      35px/ /**/
+                    1fr                      1fr                    1fr;
+}
+.styleEconomico{
+    grid-area: styleEconomico;
+}
+.styleSalida{
+    grid-area: styleSalida;
+}
+.styleTextoDuracion{
+    grid-area: styleTextoDuracion;
+}
+.styleLlegada{
+    grid-area: styleLlegada;
+} 
+.style-origen{
+    grid-area: style-origen;
+}
+.styleDuracion{
+    grid-area: styleDuracion;
+}
+.style-destino{
+    grid-area: style-destino;
+}
+.style-VueloDirecto{
+    grid-area: style-VueloDirecto;
+}
+.style-precio{
+    grid-area: style-precio;
+} 
+.linea{
+    grid-area: linea;
+    border: none;
+    border-bottom: solid 2px gray;
+}
