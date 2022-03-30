@@ -44,11 +44,13 @@ input[type="text"]{
                     "img-style          style-modelo" 40px
                     "img-style          style-año"    40px
                     "img-style           empty"       auto/
-                      auto                 1fr;
+                      6fr                 8fr;
                     
 }
 .img-style{
     grid-area: img-style;
+    width: 100%;
+    border-radius: 5px;
     
 }
 .style-mara{
@@ -59,10 +61,15 @@ input[type="text"]{
     grid-area: style-mara;
 }
 .style-modelo{
+    font-size: 1.5em;
+    font-weight: 900;
     text-align: left;
+    padding-left: 10px;
     grid-area: style-modelo;
 }
 .style-año{
-    text-align: left;
+    font-weight: 400;
+    /* border-bottom: solid 1px gray; */
+    padding-left: 10px;
     grid-area: style-año;
 }

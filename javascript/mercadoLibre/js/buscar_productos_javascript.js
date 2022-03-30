@@ -1,14 +1,17 @@
 "use strict"
 class Automovil{
-    constructor(marca, modelo, anyo, precio, img){
+    constructor(marca, modelo, anyo, precio, kilometros, img){
         this.marca = marca;
         this.modelo = modelo;
         this.anyo = anyo;
         this.img = img;
         this.precio = precio;
+        this.kilometros= kilometros;
     }
 }
-let auto = new Automovil("Toyota", "txl", 2021 ,"$ 100.000.00","img/toyotaTXL.jpeg");
+let auto = new Automovil("Toyota", "txl", 2021 ,"$ 100.000.00","0 km","img/toyotaTXL.jpeg");
+let auto1 = new Automovil("Toyota", "land Cruiser", 2021 , "$ 250.000.00","0 km","img/toyota_LandCruiser.jpeg")
+let auto2= new Automovil("Toyota", "Hilux", 2021 , "$ 200.000.00","0 km","img/toyotaHilux.jpeg");
 
 function mostrarVehiculo(auto){
     // alert(auto.marca +" " + auto.modelo);
@@ -33,6 +36,7 @@ function mostrarVehiculo(auto){
     // let txtModelo = document.createTextNode(auto.modelo);
     // EtiquetaModelo.appendChild(txtModelo);
     // EtiquetaModelo.setAttribute("class","style-modelo");
+
     let EtiquetaPrecio = document.createElement("label");
     Contenedor.appendChild(EtiquetaPrecio);
     let txtPrecio = document.createTextNode(auto.precio);
@@ -41,17 +45,27 @@ function mostrarVehiculo(auto){
 
     let EtiquetaAnyo = document.createElement("label");
     Contenedor.appendChild(EtiquetaAnyo);
-    let txtAnyo = document.createTextNode(auto.anyo);
+    let txtAnyo = document.createTextNode(auto.anyo + " | " + auto.kilometros);
     EtiquetaAnyo.appendChild(txtAnyo);
     EtiquetaAnyo.setAttribute("class","style-año");
-
-    // let txtModelo = document.createTextNode(auto.modelo);
-    // EtiquetaAuto.appendChild(txtModelo);
-    // let txtanyo = document.createTextNode(auto.anyo);
-    // EtiquetaAuto.appendChild(txtanyo);
     
 }
-function verVehiculo() {
 
-    mostrarVehiculo(auto);
+window.addEventListener("keydown", function(event){
+    let busqueda = this.document.getElementById("TextoBusqueda").value;
+    LimpiarVentana();
+    if(event.key == "Enter"){
+        if(busqueda == "toyota"){
+            mostrarVehiculo(auto);
+            mostrarVehiculo(auto1);
+            mostrarVehiculo(auto2);
+        }else if(busqueda == "mazda 3"){
+            mostrarVehiculo(auto);
+        }else{
+            this.alert("No se encuentran resultados");
+        }
+    }
+});
+function LimpiarVentana() {
+    document.getElementById("main_content").innerHTML=" ";
 }
