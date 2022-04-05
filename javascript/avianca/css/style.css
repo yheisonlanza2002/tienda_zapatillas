@@ -21,7 +21,7 @@ header{
     width: 50%;
 }
 .content-main{
-    box-shadow: 1px gray;
+    box-shadow: 1px 2px 10px gray;
     margin: 1%;
     border-radius: 6px;
     background-color: white;
@@ -40,33 +40,43 @@ header{
     border-bottom-left-radius: 5px;
     font-size: 1.2em;
     color: white;
+    text-align: center;
 }
 .styleSalida{
     grid-area: styleSalida;
+    text-align: center;
 }
 .styleTextoDuracion{
     grid-area: styleTextoDuracion;
+    text-align: center;
 }
 .styleLlegada{
     grid-area: styleLlegada;
+    text-align: center;
 } 
 .style-origen{
     grid-area: style-origen;
+    text-align: center;
 }
 .styleDuracion{
     grid-area: styleDuracion;
+    text-align: center;
 }
 .style-destino{
     grid-area: style-destino;
+    text-align: center;
 }
 .style-VueloDirecto{
     grid-area: style-VueloDirecto;
+    text-align: center;
 }
 .style-precio{
     grid-area: style-precio;
+    text-align: center;
 } 
 .linea{
     grid-area: linea;
     border: none;
     border-bottom: solid 2px gray;
+    
 }
