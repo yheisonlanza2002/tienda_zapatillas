@@ -16,13 +16,17 @@ header{
     background-color: aqua;
     font-size: 5em;
 }
-
+#main_content{
+    margin: 0 auto;
+    width: 50%;
+}
 .content-main{
+    box-shadow: 1px gray;
     margin: 1%;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: white;
     display: grid;
-    grid-template: "styleEconomico            empty             empty"         35px 
+    grid-template: "styleEconomico            empty             empty"         40px 
                      "styleSalida         styleTextoDuracion     styleLlegada"     25px 
                    "style-origen           styleDuracion       style-destino"     35px 
                    "linea                     linea              linea"            10px
@@ -31,6 +35,11 @@ header{
 }
 .styleEconomico{
     grid-area: styleEconomico;
+    background-color: red;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.2em;
+    color: white;
 }
 .styleSalida{
     grid-area: styleSalida;
