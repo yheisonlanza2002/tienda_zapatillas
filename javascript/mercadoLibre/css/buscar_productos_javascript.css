@@ -43,13 +43,13 @@ input[type="text"]{
     grid-template:  "img-style          style-mara"   40px
                     "img-style          style-modelo" 40px
                     "img-style          style-año"    40px
-                    "img-style           empty"       auto/
-                      auto                 1fr;
+                    "img-style           empty"       auto/                     
+                      8fr                  6fr;
                     
 }
 .img-style{
     grid-area: img-style;
-    
+    width: 100%;
 }
 .style-mara{
     font-size: 1.3em;
