@@ -13,6 +13,8 @@ let auto = new Automovil("Toyota", "txl", 2021 ,"$ 100.000.00","0 km","img/toyot
 let auto1 = new Automovil("Toyota", "land Cruiser", 2021 , "$ 250.000.00","0 km","img/toyota_LandCruiser.jpeg")
 let auto2= new Automovil("Toyota", "Hilux", 2021 , "$ 200.000.00","0 km","img/toyotaHilux.jpeg");
 
+let autoM = new Automovil("Mazda", "3", 2021 ,"$ 120.000.00","0 km","img/toyotaTXL.jpeg");
+
 function mostrarVehiculo(auto){
     // alert(auto.marca +" " + auto.modelo);
     let Contenedor = document.createElement("div");
@@ -30,12 +32,6 @@ function mostrarVehiculo(auto){
     let txtMarca = document.createTextNode(auto.marca+ " " + auto.modelo);
     EtiquetaMarca.appendChild(txtMarca);
     EtiquetaMarca.setAttribute("class","style-mara");
-
-    // let EtiquetaModelo = document.createElement("label");
-    // Contenedor.appendChild(EtiquetaModelo);
-    // let txtModelo = document.createTextNode(auto.modelo);
-    // EtiquetaModelo.appendChild(txtModelo);
-    // EtiquetaModelo.setAttribute("class","style-modelo");
 
     let EtiquetaPrecio = document.createElement("label");
     Contenedor.appendChild(EtiquetaPrecio);
@@ -60,7 +56,7 @@ window.addEventListener("keydown", function(event){
             mostrarVehiculo(auto1);
             mostrarVehiculo(auto2);
         }else if(busqueda == "mazda 3"){
-            mostrarVehiculo(auto);
+            mostrarVehiculo(autoM);
         }else{
             this.alert("No se encuentran resultados");
         }
