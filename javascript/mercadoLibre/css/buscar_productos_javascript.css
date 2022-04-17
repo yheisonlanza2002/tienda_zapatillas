@@ -43,23 +43,16 @@ input[type="text"]{
     grid-template:  "img-style          style-mara"   40px
                     "img-style          style-modelo" 40px
                     "img-style          style-año"    40px
-<<<<<<< HEAD
-                    "img-style           empty"       auto/
-                      6fr                 8fr;
-=======
-                    "img-style           empty"       auto/                     
+                    "img-style          style-ubicacion" 40px
+                    "img-style          empty   "     auto/                     
                       8fr                  6fr;
->>>>>>> 92abad201e6b72fcf3adb80d8c4901f2afe98d23
                     
 }
 .img-style{
     grid-area: img-style;
     width: 100%;
-<<<<<<< HEAD
     border-radius: 5px;
     
-=======
->>>>>>> 92abad201e6b72fcf3adb80d8c4901f2afe98d23
 }
 .style-mara{
     font-size: 1.3em;
@@ -80,4 +73,8 @@ input[type="text"]{
     /* border-bottom: solid 1px gray; */
     padding-left: 10px;
     grid-area: style-año;
+}
+.style-ubicacion{
+    padding-left: 10px;
+    grid-area: style-ubicacion;
 }

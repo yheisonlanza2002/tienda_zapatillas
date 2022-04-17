@@ -1,19 +1,20 @@
 "use strict"
 class Automovil{
-    constructor(marca, modelo, anyo, precio, kilometros, img){
+    constructor(marca, modelo, anyo, precio, kilometros, ubicacion, img){
         this.marca = marca;
         this.modelo = modelo;
         this.anyo = anyo;
         this.img = img;
         this.precio = precio;
         this.kilometros= kilometros;
+        this.ubicacion= ubicacion;
     }
 }
-let auto = new Automovil("Toyota", "txl", 2021 ,"$ 100.000.00","0 km","img/toyotaTXL.jpeg");
-let auto1 = new Automovil("Toyota", "land Cruiser", 2021 , "$ 250.000.00","0 km","img/toyota_LandCruiser.jpeg")
-let auto2= new Automovil("Toyota", "Hilux", 2021 , "$ 200.000.00","0 km","img/toyotaHilux.jpeg");
+let auto = new Automovil("Toyota", "txl", 2021 ,"$ 100.000.00","0 km","Medellin","img/toyotaTXL.jpeg");
+let auto1 = new Automovil("Toyota", "land Cruiser", 2021 , "$ 250.000.00","0 km","Bogota","img/toyota_LandCruiser.jpeg")
+let auto2= new Automovil("Toyota", "Hilux", 2021 , "$ 200.000.00","0 km","Barranquilla","img/toyotaHilux.jpeg");
 
-let autoM = new Automovil("Mazda", "3", 2021 ,"$ 120.000.00","0 km","img/toyotaTXL.jpeg");
+let autoM = new Automovil("Mazda", "3", 2021 ,"$ 120.000.00","0 km","Guaviare","img/toyotaTXL.jpeg");
 
 function mostrarVehiculo(auto){
     // alert(auto.marca +" " + auto.modelo);
@@ -45,6 +46,11 @@ function mostrarVehiculo(auto){
     EtiquetaAnyo.appendChild(txtAnyo);
     EtiquetaAnyo.setAttribute("class","style-año");
     
+    let EtiquetaUbicacion = document.createElement("label");
+    Contenedor.appendChild(EtiquetaUbicacion);
+    let txtUbicaciono = document.createTextNode("Colombia" + " | " + auto.ubicacion);
+    EtiquetaUbicacion.appendChild(txtUbicaciono);
+    EtiquetaUbicacion.setAttribute("class","style-ubicacion");
 }
 
 window.addEventListener("keydown", function(event){
