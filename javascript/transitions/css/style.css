@@ -1,0 +1,76 @@
+.transitions{
+    width: 100px;
+    height: 70px;
+    background-color: rebeccapurple;
+    transition: 1s;
+}
+.transitions:hover{
+    width: 300px;
+    /* background-color: red; */
+}
+
+.transitions1{
+    width: 100px;
+    height: 70px;
+    background-color: rebeccapurple;
+    transition: 1s;
+}
+.transitions1:hover{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+.transitions2{
+    width: 500px;
+    height: 500px;
+    background-image: url("https://picsum.photos/500/500");
+    transition: background-image 1s;
+}
+.transitions2:hover{
+    background-image: url("https://picsum.photos/510/510");transition: background-image 1s;
+}
+
+.transitions3a{
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.transitions3{
+    width: 0;
+    height: 500px;
+    background-image: url("https://picsum.photos/500/500");
+    transition: width 2s, height 1s;
+}
+.transitions3a:hover .transitions3{
+    width: 500px;
+    height: 500px;
+}
+.transletion1{
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    transition: transform 1s;
+}
+.transletion1:hover{
+    transform:translate(28%,28%);
+}
+.transletion2{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(183, 104, 104);
+    transition: transform 1s;
+}
+.transletion2:hover{
+    transform:translate(-28%,-28%);
+}
+.transletion3{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(62, 0, 0);
+    transition: transform 1s;
+    transform: scale(0.1);
+}
+.transletion3:hover{
+    transform:translate(-70%,-70%);
+}
