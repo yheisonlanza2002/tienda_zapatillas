@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homecenter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="icon" href="img/icono-homecenter-4.png">
+</head>
+<body>
+    <div id="idHeader" class="encabezado">
+        <label class="menu-hamburguer"><i class="fas fa-bars"></i></label>
+        <div class="img-logo">
+            <img class="icono-homecenter" src="img/icono-homecenter-4.png" alt="">
+        </div>
+        <label id="idLupa" class="icono-lupa"><img src="img/lupa.png" alt="Lupa"></label>
+        <div class="circle">0</div>
+        <label class="carrito-compras"><img src="img/shopping-cart.png"></label></i></label>
+        <label class="icono-user"><img src="img/account.png"></label></label>
+    </div>
+    <div class="contenedor">
+        <div  class="sliderMain"></div>
+        <div id="btn-abrir-popup" class="boton-modal" onclick="openPopup();">Ana</div>
+        <div id="popup" class="popup">
+            <h3 class="titulo-form">Chat de Ventas</h3>
+            <h4 class="subtitulo-form">Ingresa tus datos</h4>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" name="" id="" placeholder="Nombres">
+                    <input type="text" name="" id="" placeholder="Apellidos">
+                    <textarea class="text-area" name="" id="" placeholder="Inquietud" maxlength="200"></textarea>
+                    <input class="btn-submit" type="submit" value="Enviar Inquietud">
+                </div>
+            </form>
+            <button class="btn" onclick="closePopup();"></button>
+        </div>
+    </div>
+    <script src="js/scritp.js"></script>
+</body>
+</html>
