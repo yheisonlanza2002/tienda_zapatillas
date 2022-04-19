@@ -6,8 +6,49 @@
 .encabezado{
     display: grid;
     border-bottom: solid 2px black;
-    grid-template: "menuHamburgesa iconoHomecenter empty   iconolupa   carrito   user" 55px/
-                        40px            60px        1fr        120px      70px    40px;
+    grid-template: "menuHamburgesa iconoHomecenter empty   iconolupa   numero carrito   user" 55px/
+                        40px            60px        1fr        100px    40px   70px    40px;
+}
+.header2visible{
+    /* background-color: aqua; */
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 20px; */
+    
+    grid-template: "iconoBuscar  inputText   cerrarBuscador" 55px /
+                        1fr       8fr          1fr;
+}
+/* boton de salir de la busqueda */
+.iconoBuscar{
+    grid-area: iconoBuscar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* margin-left: 250px; */
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+.inputText{
+    grid-area: inputText;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+}
+.cerrarBuscador{
+    grid-area: cerrarBuscador;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 .menuHamburgesa{
     grid-area: menuHamburgesa;
@@ -37,12 +78,35 @@
     align-items: center;
     font-size: 1.6em;
 }
+.numero{
+    grid-area: numero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-left: 35px;
+    background-color: red;
+    color: white;
+}
 .user{
     grid-area: user;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6em;
+}
+.headerInvisible{
+    display: none;
+}
+.header2Invisible{
+    display: none;
+}
+.header2visible{
+    display: hidden;
 }
 .popup {
     position: absolute;
@@ -149,6 +213,13 @@ form {
     border-bottom: solid 1px black;
     
 }
+
+
+
+
+
+
+
 
 
 /* .transition5{

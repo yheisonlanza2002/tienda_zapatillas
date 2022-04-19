@@ -4,26 +4,65 @@ let popup = document.getElementById("popup");
 let btnCerrarPopUp = document.getElementById("cerrarPopup");
 
 
-const lupaBuscar = document.getElementById("idLupa");
-lupaBuscar.addEventListener("click", buscador);
+// const lupaBuscar = document.getElementById("idLupa");
+// lupaBuscar.addEventListener("click", buscador);
+
+
+
+const lupaBuscar= document.getElementById("idLupa");
+lupaBuscar.addEventListener("click", abrirBusqueda);
+
+const cerrarbusqueda= document.getElementById("idCerrar");
+cerrarbusqueda.addEventListener("click", cerrarBusqueda);
 
 function buscador(){
     document.getElementById("idEncabezado").innerHTML="";
     buscadorlupa();
 }
-function buscadorlupa(){
-    let contenedorBuscador = document.createElement("div");
-    let contentMain = document.getElementById("idEncabezado");
-    contentMain.appendChild(contenedorBuscador);
-    contenedorBuscador.setAttribute("class", "content-buscador")
-
-    let inputText = document.createElement("input");
-    contenedorBuscador.appendChild(inputText);
-    inputText.setAttribute("type", "text");
-    inputText.setAttribute("placeholder", "Que estas buscando...?");
-    inputText.setAttribute("class", "inputText");
-
+function abrirBusqueda(){
+    let removeEncabezado = document.getElementById("idEncabezado");
+    removeEncabezado.classList.add("headerInvisible");
+    let nuevoHeader = document.getElementById("idEncabezado2");
+    nuevoHeader.classList.remove("header2Invisible");
+    nuevoHeader.classList.add("header2visible")
 }
+function cerrarBusqueda(){
+    let removeheader2 = document.getElementById("idEncabezado2");
+    removeheader2.classList.remove("header2visible");
+    removeheader2.classList.add("header2Invisible");
+    let addHeader1 = document.getElementById("idEncabezado");
+    addHeader1.classList.remove("headerInvisible")
+}
+
+// function buscadorlupa(){
+//     let contenedorBuscador = document.createElement("div");
+//     let contentMain = document.getElementById("idEncabezado");
+//     contentMain.appendChild(contenedorBuscador);
+//     contenedorBuscador.setAttribute("class", "content-buscador");
+
+    // let iconbuscar = document.createElement("img");
+    // contenedorBuscador.appendChild(iconbuscar);
+    // iconbuscar.setAttribute("src","img/icono-lupa.png");
+    // // iconbuscar.setAttribute("href='icons/all.css'","<i class='fa-solid fa-magnifying-glass'></i>");
+    // iconbuscar.setAttribute("class","iconoBuscar");
+
+    // let inputText = document.createElement("input");
+    // contenedorBuscador.appendChild(inputText);
+    // inputText.setAttribute("type", "text");
+    // inputText.setAttribute("placeholder", "Que estas buscando...?");
+    // inputText.setAttribute("class", "inputText");
+
+    // let cerrarBusquador = document.createElement("img");
+    // contenedorBuscador.appendChild(cerrarBusquador);
+    // cerrarBusquador.setAttribute("src","img/cerrar.jpeg");
+    // cerrarBusquador.setAttribute("class", "cerrarBuscador");
+    // cerrarBusquador.addEventListener("click", cerrar);
+
+// }
+
+// function cerrar(){
+//     document.getElementById("idEncabezado").innerHTML="";
+// }
 
 
 function openPopup() {
